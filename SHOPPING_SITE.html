@@ -1,0 +1,423 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+
+    <link rel="stylesheet" href="SHOPPING_SITE.css" />
+  </head>
+  <body>
+    <div class="bg-dark">
+      <!-- INTROO-->
+      <div class="m-0 p-0">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+          <div class="container-fluid bg-black p-3">
+            <!-- Logo -->
+            <a class="navbar-brand text-light d-flex" href="#">
+              <img
+                src="yuvaimg.jpg"
+                alt="Logo"
+                width="50"
+                height="40"
+                class="d-inline-block align-text-top"
+              />
+              <div
+                class="text-primary ms-2"
+                style="
+                  font-family: 'Lucida Sans', 'Lucida Sans Regular',
+                    'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana,
+                    sans-serif;
+                "
+              >
+                PG
+              </div>
+              <div
+                class="text-danger"
+                style="
+                  font-family: 'Lucida Sans', 'Lucida Sans Regular',
+                    'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana,
+                    sans-serif;
+                "
+              >
+                YN
+              </div>
+            </a>
+
+            <!-- Toggler -->
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNav"
+              aria-controls="navbarNav"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Collapsible content -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                  <a class="nav-link active">WOMENS/GIRLS</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="MENS_BOYS.html">MENS/BOYS</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="MAKEUP_ACCESSORIES.html"
+                    >MAKEUP/ACCESSORIES</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="GROCERY_SNACKS.html">GROCERY/SNACKS</a>
+                </li>
+                <li class="nav-item me-3">
+                  <form class="d-flex" role="search">
+                    <input
+                      class="form-control rounded fs-5"
+                      type="search"
+                      id="searchInput"
+                      placeholder="Search"
+                      aria-label="Search"
+                    />
+                  </form>
+                </li>  
+                <!-- Demo button -->
+                <button class="btn btn-warning">
+                  <a class="nav-link text-dark" onclick="viewCart()"
+                    >VIEW CART</a
+                  >
+                </button>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div>
+
+    <!-- INPUT PRODUCT -->
+     <h1 class="text-center text-light">WOMANS/GIRLS WEAR</h1>
+    <div class="container">
+      <div class="row d-flex" id="card-container">
+      <div class="row justify-content-center">
+        <!-- card 1 -->
+        <div class="col-12 col-md-6 col-lg-4 mb-4">
+          <div class="card bg-dark text-white border-0 h-200">
+            <img
+              src="shri1.jpg"
+              class="card-img-top"
+              alt="..."
+              width="150"
+              height="350"
+              style="background: transparent"
+            />
+            <div class="card-body">
+              <h5 class="card-title text-primary text-center">PGYN BRAND</h5>
+              <p class="card-text text-center">
+                BLACK TOP,<br />BLUE OVER COAT,<br />BLACK JEANS.<br /><i
+                  class="bi bi-currency-rupee"
+                ></i
+                >5000
+              </p>
+              <a class="btn btn-warning" onclick="add('co dress sets',5000,this)"
+                >ADD TO CART</a
+              >
+              <a
+                href="#"
+                class="btn btn-primary"
+                onclick="buy('co dress sets',5000)"
+                >BUY NOW</a
+              >
+            </div>
+          </div>
+        </div>
+        <!-- card 2 -->
+        <div class="col-12 col-md-6 col-lg-4 mb-4">
+          <div class="card bg-dark text-white border-0 h-200">
+            <img
+              src="shri2.jpg"
+              class="card-img-top"
+              alt="..."
+              width="150"
+              height="350"
+              style="background: transparent"
+            />
+            <div class="card-body">
+              <h5 class="card-title text-primary text-center">PGYN BRAND</h5>
+              <p class="card-text text-center">
+                WHITE TOP,<br />BLUE WITH WHITE SHIRT,<br />BLACK JEANS.<br /><i
+                  class="bi bi-currency-rupee"
+                ></i
+                >4000
+              </p>
+              <a
+                href="#"
+                class="btn btn-warning"
+                onclick="add('co dress set',4000,this)"
+                >ADD TO CART</a
+              >
+              <a
+                href="#"
+                class="btn btn-primary"
+                onclick="buy('co dress set',4000)"
+                >BUY NOW</a
+              >
+            </div>
+          </div>
+        </div>
+        <!-- card 3 -->
+        <div class="col-12 col-md-6 col-lg-4 mb-4">
+          <div class="card bg-dark text-white border-0 h-100">
+            <img
+              src="shri3.jpg"
+              class="card-img-top img-fluid"
+              alt="..."
+              width="150"
+              height="350"
+              style="background: transparent"
+            />
+            <div class="card-body">
+              <h5 class="card-title text-primary text-center">PGYN BRAND</h5>
+              <p class="card-text text-center">
+                WHITE FROCK<br /><i class="bi bi-currency-rupee"></i>2000
+                <br /><br /><br />
+              </p>
+              <a
+                href="#"
+                class="btn btn-warning"
+                onclick="add('white frock',2000,this)"
+                >ADD TO CART</a
+              >
+              <a
+                href="#"
+                class="btn btn-primary"
+                onclick="buy('white frock',2000)"
+                >BUY NOW</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    
+    <!-- card 4 -->
+    <div class="container mt-5">
+      <div class="row justify-content-center">
+        <div class="col-12 col-md-6 col-lg-4 mb-4">
+          <div class="card bg-dark text-white border-0 h-100">
+            <img
+              src="shri4.jpg"
+              class="card-img-top"
+              alt="..."
+              width="150"
+              height="530"
+              style="background: transparent"
+            />
+            <div class="card-body">
+              <h5 class="card-title text-primary text-center">PGYN BRAND</h5>
+              <p class="card-text text-center">
+                WHITE BODY CON TOP,<br />BLACK JEANS.<br /><i
+                  class="bi bi-currency-rupee"
+                ></i
+                >2000
+              </p>
+              <a
+                href="#"
+                class="btn btn-warning"
+                onclick="add('dress set',2000,this)"
+                >ADD TO CART</a
+              >
+              <a
+                href="#"
+                class="btn btn-primary"
+                onclick="buy('dress set',2000)"
+                >BUY NOW</a
+              >
+            </div>
+          </div>
+        </div>
+        <!-- card 5 -->
+        <div class="col-12 col-md-6 col-lg-4 mb-4">
+          <div class="card bg-dark text-white border-0 h-100">
+            <img
+              src="shri5.jpg"
+              class="card-img-top"
+              alt="..."
+              width="150"
+              height="530"
+              style="background: transparent"
+            />
+            <div class="card-body">
+              <h5 class="card-title text-primary text-center">PGYN BRAND</h5>
+              <p class="card-text text-center">
+                PINK SLEEVELESS FROCK<br /><i class="bi bi-currency-rupee"></i
+                >3000<br /><br />
+              </p>
+              <a
+                href="#"
+                class="btn btn-warning"
+                onclick="add('pink sleeveless frock',3000,this)"
+                >ADD TO CART</a
+              >
+              <a
+                href="#"
+                class="btn btn-primary"
+                onclick="buy('pink sleeveless frock',3000)"
+                >BUY NOW</a
+              >
+            </div>
+          </div>
+        </div>
+        <!-- card 6 -->
+        <div class="col-12 col-md-6 col-lg-4 mb-4">
+          <div class="card bg-dark text-white border-0 h-100">
+            <img
+              src="shri6.jpg"
+              class="card-img-top img-fluid"
+              alt="..."
+              width="150"
+              height="530"
+              style="background: transparent"
+            />
+            <div class="card-body">
+              <h5 class="card-title text-primary text-center">PGYN BRAND</h5>
+              <p class="card-text text-center">
+                PINK FLORAL SAREE<br /><i class="bi bi-currency-rupee"></i
+                >8000<br /><br />
+              </p>
+              <a
+                href="#"
+                class="btn btn-warning"
+                onclick="add('pink saree',8000,this)"
+                >ADD TO CART</a
+              >
+              <a
+                href="#"
+                class="btn btn-primary"
+                onclick="buy('pink saree',8000)"
+                >BUY NOW</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- card 7 -->
+    <div class="container mt-5">
+      <div class="row justify-content-center">
+        <div class="col-12 col-md-6 col-lg-4 mb-4">
+          <div class="card bg-dark text-white border-0 h-100">
+            <img
+              src="shri7.jpg"
+              class="card-img-top"
+              alt="..."
+              width="100"
+              height="470"
+              style="background: transparent"
+            />
+            <div class="card-body">
+              <h5 class="card-title text-primary text-center">PGYN BRAND</h5>
+              <p class="card-text text-center">
+                CUSTOMIZE JERSEY<br /><i class="bi bi-currency-rupee"></i>2000
+              </p>
+              <a
+                href="#"
+                class="btn btn-warning"
+                onclick="add('customize jersey',2000,this)"
+                >ADD TO CART</a
+              >
+              <a
+                href="#"
+                class="btn btn-primary"
+                onclick="buy('customize jersey',2000)"
+                >BUY NOW</a
+              >
+            </div>
+          </div>
+        </div>
+        <!-- card 8 -->
+        <div class="col-12 col-md-6 col-lg-4 mb-4">
+          <div class="card bg-dark text-white border-0 h-100">
+            <img
+              src="shri8.jpg"
+              class="card-img-top"
+              alt="..."
+              width="150"
+              height="470"
+              style="background: transparent"
+            />
+            <div class="card-body">
+              <h5 class="card-title text-primary text-center">PGYN BRAND</h5>
+              <p class="card-text text-center">
+                GREEN FROCK.<br /><i class="bi bi-currency-rupee"></i>4500
+              </p>
+              <a
+                href="#"
+                class="btn btn-warning"
+                onclick="add('green frock',4500,this)"
+                >ADD TO CART</a
+              >
+              <a
+                href="#"
+                class="btn btn-primary"
+                onclick="buy('green frock',4500)"
+                >BUY NOW</a
+              >
+            </div>
+          </div>
+        </div>
+        <!-- card 9 -->
+        <div class="col-12 col-md-6 col-lg-4 mb-4">
+          <div class="card bg-dark text-white border-0 h-100">
+            <img
+              src="shri9.jpg"
+              class="card-img-top img-fluid"
+              alt="..."
+              width="150"
+              height="350"
+              style="background: transparent"
+            />
+            <div class="card-body">
+              <h5 class="card-title text-primary text-center">PGYN BRAND</h5>
+              <p class="card-text text-center">
+                PINK SHORT FROCK.<br /><i class="bi bi-currency-rupee"></i>3500
+              </p>
+              <a
+                href="#"
+                class="btn btn-warning"
+                onclick="add('pink short frock',3500,this)"
+                >ADD TO CART</a
+              >
+              <a
+                href="#"
+                class="btn btn-primary"
+                onclick="buy('pink short frock',3500)"
+                >BUY NOW</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+    <hr class="text-light" />
+    <div class="text-center">
+      <h2 class="text-light">ABOUT US</h2>
+      <p class="text-light">
+        THIS IS MOST TRUSTED WEBSITE. SHOP MORE AND BE HAPPY....
+      </p>
+    </div>
+  </body>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="SHOPPING_SITE.js"></script>
+</html>

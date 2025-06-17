@@ -1,0 +1,21 @@
+body {
+  background-color: black;
+}
+/* navigation bar style */
+.bg-warning-gradient {
+  background: linear-gradient(to bottom, #ff9800, #ffc107);
+  color: #ffffff;
+}
+.custom-imgcolor {
+  background: linear-gradient(to bottom, #959595, #010101);
+  color: #ffffff;
+}
+.left-img {
+  max-width: 100%;
+  height: auto;
+}
+
+.navbar-nav .nav-link:hover {
+  color: blue !important;
+  text-decoration: underline;
+}
